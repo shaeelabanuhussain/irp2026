@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1B2838;
+  --green: #4CB97A;
+  --blue: #1E8DC8;
+  --off: #f8f8f7;
+  --border: #e6e6e4;
+  --muted: #686868;
+}
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-navy: var(--navy);
+  --color-green: var(--green);
+  --color-blue: var(--blue);
+  --color-off: var(--off);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--navy);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reveal animation — slower, more elegant */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.d1 { transition-delay: 0.1s; }
+.reveal.d2 { transition-delay: 0.2s; }
+.reveal.d3 { transition-delay: 0.3s; }
+.reveal.d4 { transition-delay: 0.4s; }
+.reveal.d5 { transition-delay: 0.5s; }
+
+/* FAQ transition */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.faq-answer.open {
+  max-height: 500px;
+}
+
+/* Phase expand transition */
+.phase-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.phase-content.open {
+  max-height: 600px;
+}
+
+/* Scroll-highlight word animation */
+.scroll-word {
+  color: rgba(27, 40, 56, 0.15);
+  transition: color 0.35s ease;
+}
+
+.scroll-word.lit {
+  color: rgba(27, 40, 56, 1);
+}
+
+.scroll-word.green-lit {
+  color: var(--green);
+}
+
+/* Curriculum tab content animation */
+.animate-fade-in {
+  animation: fadeSlideIn 0.35s ease-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
