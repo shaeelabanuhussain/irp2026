@@ -43,7 +43,7 @@ const cards: Card[] = [
     title: "Code Crunch",
     desc: "Hackathon-style sprints under real pressure. Build fast, ship faster, learn the most.",
     dark: true,
-    image: "/images/Image (1).jpg",
+    image: "/images/image1.jpg",
     imagePosition: "object-center",
   },
   {
