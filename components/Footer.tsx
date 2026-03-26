@@ -20,7 +20,7 @@ const columns = [
     title: "Hearts Academy",
     links: [
       { label: "About", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "Contact", href: "/contact" },
     ],
   },
 ];
@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/10 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-[0.75rem] text-white/30 font-mono tracking-[0.04em]">
-            2026 Hearts Academy. All rights reserved.
+            &copy; 2026 BISTEC Hearts Academy. All rights reserved.
           </p>
           <p className="text-[0.75rem] text-white/20 font-mono tracking-[0.04em]">
             Ship real software.
