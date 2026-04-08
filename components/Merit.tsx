@@ -32,7 +32,7 @@ export default function Merit() {
               <span className="text-green">your investment.</span>
             </h3>
             <p className="text-[1rem] text-muted leading-[1.78] max-w-[520px]">
-              After the 3 months foundation track, we evaluate your performance. Your performance decides your fee.
+              At the 12-week midpoint, every participant is evaluated on technical output, AI proficiency, collaboration, and consistency. Your performance decides your fee.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function Merit() {
               ))}
             </div>
             <p className="text-[0.8125rem] text-muted mt-5 font-mono tracking-[0.02em]">
-              Waivers applied automatically at the halfway evaluation.
+              Waivers applied automatically at the 12-week midpoint evaluation. No separate application needed.
             </p>
           </div>
         </div>

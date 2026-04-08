@@ -5,38 +5,46 @@ import { useState } from "react";
 const phases = [
   {
     num: "01",
-    period: "Months 1-2",
-    title: "Foundations and AI Toolchain Setup",
-    desc: "Set up your development environment, learn LLM fundamentals, and establish Git workflows that everything else rests on.",
-    tags: ["Dev Environment", "LLM Fundamentals", "AI Ecosystem", "Git Workflows"],
+    period: "Weeks 1\u20134",
+    title: "Foundations and First Ship",
+    desc: "Learn spec-driven development by doing it. Write your first production specification, build it with AI-powered tools, deploy it, and present it \u2014 all in the first month.",
+    tags: ["Spec Writing", "AI Toolchain", "First Deployment", "Demo Day #1"],
   },
   {
     num: "02",
-    period: "Month 2-3",
-    title: "Context Engineering and LLM Integration",
-    desc: "Master context engineering, chain of thought reasoning, and connect LLMs to real applications via APIs and RAG pipelines.",
-    tags: ["Context Engineering", "Chain of Thought", "API Integration", "RAG Pipelines", "Structured Output"],
+    period: "Weeks 5\u20138",
+    title: "Team Project Sprint",
+    desc: "Work in a team on a real internal project. Stakeholder interviews, collaborative architecture, agile sprints, code reviews \u2014 the full cycle from problem to deployed solution.",
+    tags: ["Team Collaboration", "Agile Sprints", "Code Reviews", "Demo Day #2"],
   },
   {
     num: "03",
-    period: "Month 3-4",
-    title: "Agentic Workflows and Multi Agent Systems",
-    desc: "Design autonomous agents, build multi agent systems, implement tool use, and add observability to your AI workflows.",
-    tags: ["Agent Design", "Orchestration", "Tool Use", "Task Delegation", "Observability"],
+    period: "Weeks 9\u201312",
+    title: "Advanced AI and LLM Integration",
+    desc: "Build AI-powered features into real products. Context engineering, multi-agent orchestration, and production-grade AI systems \u2014 not toy demos.",
+    tags: ["Context Engineering", "Multi-Agent Systems", "Production AI", "Demo Day #3"],
   },
   {
     num: "04",
-    period: "Month 4-5",
-    title: "AI Driven Full Stack Development",
-    desc: "Build production frontends with React, RESTful APIs, PostgreSQL databases, authentication systems, and CI/CD pipelines, all powered by AI tooling.",
-    tags: ["React / Frontend", "RESTful APIs", "PostgreSQL", "Auth and Security", "CI/CD"],
+    period: "Weeks 13\u201316",
+    title: "Embedded in Development Teams",
+    desc: "Join a professional development team. Real tickets, real deadlines, real users. Daily standups, sprint planning, and production deployments \u2014 you\u2019re a contributing team member.",
+    tags: ["Production Code", "Cross-Functional Teams", "Feature Ownership"],
   },
   {
     num: "05",
-    period: "Month 5-6",
-    title: "Capstone: Ship Your Product",
-    desc: "Plan your product, execute sprints, deploy to production, and present at Demo Day. This is where everything comes together.",
-    tags: ["Product Planning", "Sprint Execution", "Deployment", "Demo Day", "Career Prep"],
+    period: "Weeks 17\u201320",
+    title: "Full Stack Ownership",
+    desc: "Own a feature or module end-to-end \u2014 from writing the spec to monitoring it in production. Infrastructure, security, performance \u2014 the full picture.",
+    tags: ["Cloud Infrastructure", "Security", "Monitoring", "End-to-End Ownership"],
+  },
+  {
+    num: "06",
+    period: "Weeks 21\u201324",
+    title: "Capstone: Ship and Present",
+    desc: "Polish your portfolio, complete your capstone project, and present your work to company leadership and partner organisations. This is your launchpad.",
+    tags: ["Portfolio Curation", "Demo Day Final", "Placement"],
+    isCapstone: true,
   },
 ];
 
@@ -84,22 +92,26 @@ export default function Curriculum() {
 
             {/* Description */}
             <p className="reveal d2 text-[1rem] text-white/45 leading-[1.75] max-w-[420px] mb-10">
-              Intensive, project based cohort designed to transform undergraduates into production capable developers who lead with AI Agents.
+              Full-time industrial training. Spec-driven development with AI. Real projects, real teams, real deployment.
             </p>
 
             {/* Stats row */}
             <div className="reveal d3 flex gap-0 mb-10">
               <div className="pr-7 border-r border-white/10">
                 <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Format</p>
-                <p className="text-[1.0625rem] font-semibold text-white">Intensive</p>
+                <p className="text-[1.0625rem] font-semibold text-white">Full-Time</p>
               </div>
               <div className="px-7 border-r border-white/10">
-                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Duration</p>
-                <p className="text-[1.0625rem] font-semibold text-white">6 Months</p>
+                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Hours</p>
+                <p className="text-[1.0625rem] font-semibold text-white">~960</p>
               </div>
-              <div className="pl-7">
+              <div className="px-7 border-r border-white/10">
                 <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Cohort Size</p>
                 <p className="text-[1.0625rem] font-semibold text-white">8-10</p>
+              </div>
+              <div className="pl-7">
+                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Certification</p>
+                <p className="text-[1.0625rem] font-semibold text-white">NAITA SIT</p>
               </div>
             </div>
 
@@ -127,7 +139,7 @@ export default function Curriculum() {
           <div className="flex flex-col gap-3">
             {phases.map((phase, i) => {
               const isOpen = openIdx === i;
-              const isCapstone = i === phases.length - 1;
+              const isCapstone = "isCapstone" in phase;
 
               return (
                 <div

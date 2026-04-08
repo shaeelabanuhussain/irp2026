@@ -1,8 +1,9 @@
 const stats = [
   { value: "24", label: "Weeks" },
-  { value: "5", label: "Phases" },
-  { value: "15\u201320", label: "Hrs / Week" },
-  { value: "Real", label: "Projects Only" },
+  { value: "Full-Time", label: "40 Hrs / Week" },
+  { value: "\u223C960", label: "Total Hours" },
+  { value: "NAITA", label: "SIT Eligible" },
+  { value: "8\u201310", label: "Per Cohort" },
 ];
 
 export default function Hero() {
@@ -37,9 +38,9 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className="reveal d1 text-white/65 text-[0.875rem] leading-[1.6] max-w-[460px] mb-7">
-          Hearts Academy&apos;s Industry Readiness Program takes undergraduates from
-          classroom theory to deployed, production-grade software - in 24 weeks. Real
-          projects. Real mentors. Real placement.
+          Hearts Academy&apos;s Industry Readiness Program takes undergraduates and
+          school leavers from classroom theory to deployed, production-grade
+          software in 24 weeks. Real projects. Real mentors. Real placement.
         </p>
 
         {/* CTAs */}
