@@ -91,33 +91,33 @@ export default function Curriculum() {
             </h3>
 
             {/* Description */}
-            <p className="reveal d2 text-[1rem] text-white/45 leading-[1.75] max-w-[420px] mb-10">
+            <p className="reveal d2 text-[1rem] text-white/60 leading-[1.75] max-w-[420px] mb-10">
               Full-time industrial training. Spec-driven development with AI. Real projects, real teams, real deployment.
             </p>
 
             {/* Stats row */}
             <div className="reveal d3 flex gap-0 mb-10">
               <div className="pr-7 border-r border-white/10">
-                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Format</p>
+                <p className="font-mono text-[0.6rem] text-white/45 tracking-[0.14em] uppercase mb-1.5">Format</p>
                 <p className="text-[1.0625rem] font-semibold text-white">Full-Time</p>
               </div>
               <div className="px-7 border-r border-white/10">
-                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Hours</p>
+                <p className="font-mono text-[0.6rem] text-white/45 tracking-[0.14em] uppercase mb-1.5">Hours</p>
                 <p className="text-[1.0625rem] font-semibold text-white">~960</p>
               </div>
               <div className="px-7 border-r border-white/10">
-                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Cohort Size</p>
+                <p className="font-mono text-[0.6rem] text-white/45 tracking-[0.14em] uppercase mb-1.5">Cohort Size</p>
                 <p className="text-[1.0625rem] font-semibold text-white">8-10</p>
               </div>
               <div className="pl-7">
-                <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-1.5">Certification</p>
+                <p className="font-mono text-[0.6rem] text-white/45 tracking-[0.14em] uppercase mb-1.5">Certification</p>
                 <p className="text-[1.0625rem] font-semibold text-white">NAITA SIT</p>
               </div>
             </div>
 
             {/* Technologies & Skills */}
             <div className="reveal d4">
-              <p className="font-mono text-[0.6rem] text-white/30 tracking-[0.14em] uppercase mb-4">
+              <p className="font-mono text-[0.6rem] text-white/45 tracking-[0.14em] uppercase mb-4">
                 Technologies and Skills
               </p>
               <div className="flex flex-wrap gap-2">
@@ -160,7 +160,7 @@ export default function Curriculum() {
                     <span className={`font-mono text-[0.8125rem] font-semibold shrink-0 ${
                       isOpen
                         ? isCapstone ? "text-green" : "text-blue"
-                        : "text-white/25"
+                        : "text-white/40"
                     }`}>
                       {phase.num}
                     </span>
@@ -169,13 +169,13 @@ export default function Curriculum() {
                       <p className="text-[1rem] font-semibold text-white tracking-[-0.01em]">
                         {phase.title}
                       </p>
-                      <p className="font-mono text-[0.6875rem] text-white/30 tracking-[0.06em] mt-0.5">
+                      <p className="font-mono text-[0.6875rem] text-white/45 tracking-[0.06em] mt-0.5">
                         {phase.period}
                       </p>
                     </div>
 
                     <svg
-                      className={`w-5 h-5 text-white/30 shrink-0 transition-transform duration-300 ${
+                      className={`w-5 h-5 text-white/45 shrink-0 transition-transform duration-300 ${
                         isOpen ? "rotate-180" : ""
                       }`}
                       fill="none"
@@ -190,7 +190,7 @@ export default function Curriculum() {
                   {/* Expandable content */}
                   {isOpen && (
                     <div className="px-6 pb-6 pl-[52px]">
-                      <p className="text-[0.9375rem] text-white/50 leading-[1.72] mb-5">
+                      <p className="text-[0.9375rem] text-white/65 leading-[1.72] mb-5">
                         {phase.desc}
                       </p>
                       <div className="flex flex-wrap gap-2">

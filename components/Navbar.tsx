@@ -53,7 +53,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[0.9375rem] text-navy/65 hover:text-navy transition-colors"
+              className="text-[0.9375rem] text-navy/75 hover:text-navy transition-colors"
             >
               {l.label}
             </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-[0.9375rem] text-navy/70 hover:text-navy transition-colors py-1"
+              className="text-[0.9375rem] text-navy/80 hover:text-navy transition-colors py-1"
             >
               {l.label}
             </a>

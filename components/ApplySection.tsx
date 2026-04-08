@@ -18,7 +18,7 @@ export default function ApplySection() {
               Takes under 5 minutes. We review every application
               individually and respond within 7 days.
             </p>
-            <p className="text-[0.875rem] text-muted/60 leading-[1.7]">
+            <p className="text-[0.875rem] text-muted/80 leading-[1.7]">
               Programme fee and instalment options are shared after your
               application is reviewed.
             </p>
@@ -71,7 +71,7 @@ export default function ApplySection() {
                   />
                 </svg>
               </a>
-              <p className="text-[0.8125rem] text-muted/50 mt-5 font-mono">
+              <p className="text-[0.8125rem] text-muted/70 mt-5 font-mono">
                 Opens in Microsoft Forms
               </p>
             </div>

@@ -41,7 +41,7 @@ export default function Footer() {
                 className="h-6 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-[0.8125rem] text-white/40 leading-[1.6]">
+            <p className="text-[0.8125rem] text-white/55 leading-[1.6]">
               Industry Readiness Program.
               <br />
               From classroom to career.
@@ -51,7 +51,7 @@ export default function Footer() {
           {/* Link Columns */}
           {columns.map((col) => (
             <div key={col.title}>
-              <p className="font-mono text-[0.6875rem] text-white/30 tracking-[0.1em] uppercase mb-5">
+              <p className="font-mono text-[0.6875rem] text-white/45 tracking-[0.1em] uppercase mb-5">
                 {col.title}
               </p>
               <div className="flex flex-col gap-3">
@@ -59,7 +59,7 @@ export default function Footer() {
                   <a
                     key={link.label}
                     href={link.href}
-                    className="text-[0.875rem] text-white/55 hover:text-white transition-colors"
+                    className="text-[0.875rem] text-white/65 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -71,10 +71,10 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-white/10 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-[0.75rem] text-white/30 font-mono tracking-[0.04em]">
+          <p className="text-[0.75rem] text-white/45 font-mono tracking-[0.04em]">
             &copy; 2026 BISTEC Hearts Academy. All rights reserved.
           </p>
-          <p className="text-[0.75rem] text-white/20 font-mono tracking-[0.04em]">
+          <p className="text-[0.75rem] text-white/35 font-mono tracking-[0.04em]">
             Ship real software.
           </p>
         </div>

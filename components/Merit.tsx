@@ -11,7 +11,7 @@ export default function Merit() {
             Prove it.{" "}
             <span className="shimmer-text">We&apos;ll pay for it.</span>
           </h2>
-          <p className="text-[1rem] text-white/40 leading-[1.75] max-w-[520px] mx-auto">
+          <p className="text-[1rem] text-white/55 leading-[1.75] max-w-[520px] mx-auto">
             At the 12-week midpoint, every participant is evaluated on
             technical output, AI proficiency, collaboration, and consistency.
           </p>
@@ -28,10 +28,10 @@ export default function Merit() {
             <p className="count-up text-[2.75rem] font-bold text-white tracking-[-0.03em] leading-none mb-2">
               100%
             </p>
-            <p className="text-[0.9375rem] text-white/50">
+            <p className="text-[0.9375rem] text-white/65">
               fee waiver
             </p>
-            <p className="text-[0.8125rem] text-white/25 mt-4">
+            <p className="text-[0.8125rem] text-white/40 mt-4">
               Full waiver on remaining monthly fees
             </p>
           </div>
@@ -44,10 +44,10 @@ export default function Merit() {
             <p className="count-up text-[2.75rem] font-bold text-white tracking-[-0.03em] leading-none mb-2">
               50%
             </p>
-            <p className="text-[0.9375rem] text-white/50">
+            <p className="text-[0.9375rem] text-white/65">
               fee waiver
             </p>
-            <p className="text-[0.8125rem] text-white/25 mt-4">
+            <p className="text-[0.8125rem] text-white/40 mt-4">
               Half of remaining monthly fees waived
             </p>
           </div>
@@ -60,16 +60,16 @@ export default function Merit() {
             <p className="count-up text-[2.75rem] font-bold text-white tracking-[-0.03em] leading-none mb-2">
               Open
             </p>
-            <p className="text-[0.9375rem] text-white/50">
+            <p className="text-[0.9375rem] text-white/65">
               scholarship
             </p>
-            <p className="text-[0.8125rem] text-white/25 mt-4">
+            <p className="text-[0.8125rem] text-white/40 mt-4">
               Talent should never be limited by finances
             </p>
           </div>
         </div>
 
-        <p className="reveal d4 text-center text-[0.8125rem] text-white/25 font-mono tracking-[0.02em]">
+        <p className="reveal d4 text-center text-[0.8125rem] text-white/40 font-mono tracking-[0.02em]">
           Waivers applied automatically. No separate application needed.
         </p>
       </div>

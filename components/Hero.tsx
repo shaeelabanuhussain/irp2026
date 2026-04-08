@@ -37,7 +37,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheading */}
-        <p className="reveal d1 text-white/65 text-[0.875rem] leading-[1.6] max-w-[460px] mb-7">
+        <p className="reveal d1 text-white/75 text-[0.875rem] leading-[1.6] max-w-[460px] mb-7">
           Hearts Academy&apos;s Industry Readiness Program takes undergraduates and
           school leavers from classroom theory to deployed, production-grade
           software in 24 weeks. Real projects. Real mentors. Real placement.
@@ -72,7 +72,7 @@ export default function Hero() {
                 <span className="text-white text-[1.5rem] font-bold tracking-[-0.02em] leading-none mb-1">
                   {s.value}
                 </span>
-                <span className="font-mono text-[0.5rem] text-white/40 tracking-[0.16em] uppercase">
+                <span className="font-mono text-[0.5rem] text-white/55 tracking-[0.16em] uppercase">
                   {s.label}
                 </span>
               </div>

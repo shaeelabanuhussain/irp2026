@@ -20,12 +20,12 @@ export default function ContactPage() {
           <h1 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold leading-[1.15] tracking-[-0.03em] text-white mb-5">
             Send us your CV, or just say hello.
           </h1>
-          <p className="text-[0.9375rem] text-white/50 leading-[1.7] mb-3">
+          <p className="text-[0.9375rem] text-white/65 leading-[1.7] mb-3">
             No cover letter needed. Just your CV and a line about what excites
             you about this internship. Don&apos;t have a CV yet? We can help you
             put one together.
           </p>
-          <p className="text-[0.8125rem] text-white/35 italic mb-10">
+          <p className="text-[0.8125rem] text-white/50 italic mb-10">
             We read every application.
           </p>
 
