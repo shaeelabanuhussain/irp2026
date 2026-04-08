@@ -72,7 +72,7 @@ export default function WhatYouGet() {
           {cards.map((c, i) => (
             <div
               key={c.title}
-              className={`reveal d${(i % 5) + 1} rounded-xl overflow-hidden border transition-transform duration-200 hover:-translate-y-1 ${
+              className={`reveal d${(i % 5) + 1} rounded-xl overflow-hidden border card-lift ${
                 c.dark
                   ? "bg-navy border-navy text-white"
                   : "bg-white border-border text-navy"

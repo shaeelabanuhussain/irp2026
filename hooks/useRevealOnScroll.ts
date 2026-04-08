@@ -15,7 +15,7 @@ export function useRevealOnScroll() {
       { threshold: 0.05, rootMargin: "0px 0px -60px 0px" }
     );
 
-    const elements = document.querySelectorAll(".reveal");
+    const elements = document.querySelectorAll(".reveal, .reveal-scale, .glow-green, .count-up");
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();

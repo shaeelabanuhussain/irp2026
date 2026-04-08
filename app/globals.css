@@ -102,3 +102,99 @@ body {
     transform: translateY(0);
   }
 }
+
+/* ── Motion Design System ── */
+
+/* Subtle scale-up on scroll reveal — for cards and tier blocks */
+.reveal-scale {
+  opacity: 0;
+  transform: translateY(24px) scale(0.97);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-scale.d1 { transition-delay: 0.12s; }
+.reveal-scale.d2 { transition-delay: 0.24s; }
+.reveal-scale.d3 { transition-delay: 0.36s; }
+
+/* Green glow pulse — for the highlighted tier card */
+.glow-green {
+  box-shadow: 0 0 0 rgba(76, 185, 122, 0),
+              0 0 40px rgba(76, 185, 122, 0);
+  transition: box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-green.visible {
+  animation: pulseGlow 3s ease-in-out 0.8s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(76, 185, 122, 0.06),
+                0 0 60px rgba(76, 185, 122, 0.03);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(76, 185, 122, 0.12),
+                0 0 80px rgba(76, 185, 122, 0.06);
+  }
+}
+
+/* Number count-up animation — for percentage values */
+.count-up {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.count-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card lift — subtle hover micro-interaction */
+.card-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Gradient shimmer — for accent headings */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--green) 0%,
+    #6ee7a0 40%,
+    var(--green) 80%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 100% 50%; }
+  50% { background-position: 0% 50%; }
+}
+
+/* Smooth border glow on hover — for dark cards */
+.border-glow {
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.border-glow:hover {
+  border-color: rgba(76, 185, 122, 0.3);
+  box-shadow: 0 0 20px rgba(76, 185, 122, 0.05);
+}
